@@ -122,6 +122,7 @@
           index = i;
         }
       });
+      next = imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -154,6 +155,7 @@
           index = i;
         }
       });
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
