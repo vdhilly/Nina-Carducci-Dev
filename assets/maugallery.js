@@ -200,7 +200,6 @@
       }
     },
     filterByTag() {
-      // MODIF : ajout de "active" class
       if ($(this).hasClass("active active-tag")) {
         return;
       }
