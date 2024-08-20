@@ -122,7 +122,6 @@
           index = i;
         }
       });
-      // MODIF : ajout de -1
       next = imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -156,7 +155,6 @@
           index = i;
         }
       });
-      // MODIF : ajout de +1
       next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
